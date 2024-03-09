@@ -42,10 +42,21 @@ const library = {
             const track = this.tracks[trackId];
             console.log(`${track.id}: ${track.name} by ${track.artist} (${track.album})`);
           }
-    },
+},
   
     addTrack: function (name, artist, album) {
-    },
+        const newTrackId = this.generateUid();
+        const newTrack = {
+        id: newTrackId,
+        name: name,
+        artist: artist,
+        album: album
+    }
+
+    this.tracks[newTrackId] = newTrack;
+    console.log(`Track with ID ${newTrackId} added to the library.`);
+
+},
 
 
     addPlaylist: function (name) {
