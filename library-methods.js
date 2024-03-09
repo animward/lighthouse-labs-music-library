@@ -75,3 +75,8 @@ const library = {
         return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
     }
 };
+
+library.printPlaylists();
+library.printTracks();
+library.addTrack("New Track", "New Artist", "New Album");
+library.addPlaylist("New Playlist");
