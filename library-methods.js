@@ -15,8 +15,11 @@ const library = {
   
     // it's now a method!
     printTracks: function () {
-  
-    }
+        for (const trackId in this.tracks) {
+            const track = this.tracks[trackId];
+            console.log(`${track.id}: ${track.name} by ${track.artist} (${track.album})`);
+          }
+    },
   
     // ...
   
