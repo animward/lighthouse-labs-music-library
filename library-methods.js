@@ -44,6 +44,16 @@ const library = {
           }
     },
   
-    // ...
+    addTrack: function (name, artist, album) {
+    },
+
+
+    addPlaylist: function (name) {
+    },
+
+
+    generateUid: function () {
+    }
+
   
   };
