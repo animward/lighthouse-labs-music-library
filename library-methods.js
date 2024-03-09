@@ -60,8 +60,16 @@ const library = {
 
 
     addPlaylist: function (name) {
-    },
+        const newPlaylistId = this.generateUid();
+        const newPlaylist = {
+        id: newPlaylistId,
+        name: name,
+        tracks: []
+        }
 
+        this.playlists[newPlaylistId] = newPlaylist;
+        console.log(`Playlist with ID ${newPlaylistId} added to the library.`);
+  },
 
     generateUid: function () {
     }
