@@ -143,6 +143,9 @@ const addPlaylist = function(name) {
        console.log(`Playlist with ID ${newPlaylistId} added to the library.`);
 }
 
+addTrack("New Track", "New Artist", "New Album");
+addPlaylist("New Playlist");
+
 // STRETCH:
 // given a query string string, prints a list of tracks
 // where the name, artist or album contains the query string (case insensitive)
